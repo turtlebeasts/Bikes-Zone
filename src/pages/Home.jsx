@@ -1,42 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaMotorcycle, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
+import HeroSection from "../components/HeroSection";
 
 export default function Home() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-50 to-blue-100 py-24 px-6 text-center overflow-hidden">
-        <motion.h1
-          className="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4"
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6 }}
-        >
-          Rent Your Dream Ride Today!
-        </motion.h1>
-        <motion.p
-          className="text-gray-700 mb-6 max-w-2xl mx-auto text-lg"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-        >
-          Explore a wide range of bikes and scooters at unbeatable prices.
-          Hassle-free booking. Fast pickup.
-        </motion.p>
-        <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-        >
-          <Link
-            to="/vehicles"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition"
-          >
-            Browse Vehicles
-          </Link>
-        </motion.div>
-      </section>
+      <HeroSection />
 
       {/* How It Works Section */}
       <section className="py-20 px-6 bg-white text-center">
