@@ -3,7 +3,7 @@ import bikes from "../data/bikes";
 export default function Vehicles() {
   return (
     <div className="px-6 py-12 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-center text-blue-600 mb-10">
+      <h1 className="text-3xl font-bold text-center text-rose-600 mb-10">
         Available Bikes & Scooters
       </h1>
 
@@ -26,7 +26,7 @@ export default function Vehicles() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-auto bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              className="inline-block mt-auto bg-rose-600 text-white px-4 py-2 rounded hover:bg-rose-700 transition"
             >
               Book Now
             </a>

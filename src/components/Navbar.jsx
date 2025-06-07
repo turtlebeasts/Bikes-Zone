@@ -14,9 +14,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-black/60 backdrop-blur-md shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold text-blue-600">
+        <Link to="/" className="text-2xl font-bold text-white logo-text">
           Bikes Zone
         </Link>
 
@@ -27,10 +27,21 @@ export default function Navbar() {
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                isActive ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
+                `relative group transition duration-300 ${
+                  isActive ? "text-rose-500 font-semibold" : "text-gray-300"
+                }`
               }
             >
-              {link.name}
+              {({ isActive }) => (
+                <>
+                  {link.name}
+                  <span
+                    className={`absolute left-0 -bottom-1 h-0.5 bg-rose-500 transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                  ></span>
+                </>
+              )}
             </NavLink>
           ))}
         </div>
@@ -38,7 +49,7 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(true)}>
-            <Menu className="w-6 h-6" />
+            <Menu className="w-6 h-6 text-white" />
           </button>
         </div>
       </div>
@@ -53,14 +64,14 @@ export default function Navbar() {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-white w-full h-full flex flex-col items-center justify-center relative px-8"
+              className="bg-black/90 backdrop-blur-lg text-white w-full h-screen flex flex-col items-center justify-start relative pt-20 px-8 overflow-y-auto"
               initial={{ y: "100%" }}
-              animate={{ y: 0 }}
+              animate={{ y: "50%" }}
               exit={{ y: "100%" }}
               transition={{ type: "spring", stiffness: 70, damping: 20 }}
             >
               <button
-                className="absolute top-6 right-6 text-gray-700 hover:text-red-500"
+                className="absolute top-6 right-6 text-white hover:text-red-500"
                 onClick={() => setIsOpen(false)}
               >
                 <X className="w-6 h-6" />
@@ -90,10 +101,10 @@ export default function Navbar() {
                       to={link.path}
                       onClick={() => setIsOpen(false)}
                       className={({ isActive }) =>
-                        `block ${
+                        `block text-xl font-semibold ${
                           isActive
-                            ? "text-blue-600"
-                            : "text-gray-800 hover:text-blue-600"
+                            ? "text-rose-500"
+                            : "text-gray-300 hover:text-indigo-400"
                         }`
                       }
                     >

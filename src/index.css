@@ -1,1 +1,10 @@
 @import "tailwindcss";
+.logo-text {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+}
+
+.banner-text {
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
+}

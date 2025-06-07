@@ -5,7 +5,7 @@ export default function About() {
     <div className="min-h-screen bg-gray-50 py-16 px-6">
       <div className="max-w-5xl mx-auto text-center">
         <motion.h1
-          className="text-4xl md:text-5xl font-bold text-blue-600 mb-6"
+          className="text-4xl md:text-5xl font-bold text-rose-600 mb-6"
           initial={{ y: -30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
@@ -44,7 +44,7 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 + idx * 0.2 }}
             >
-              <h3 className="text-xl font-semibold text-blue-600 mb-2">
+              <h3 className="text-xl font-semibold text-rose-600 mb-2">
                 {item.title}
               </h3>
               <p className="text-gray-600">{item.desc}</p>

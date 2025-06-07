@@ -4,7 +4,7 @@ import { ReactTyped as Typed } from "react-typed";
 
 export default function HeroSection() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden -mt-14">
       {/* Background Video */}
       <motion.video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -26,7 +26,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center text-center h-full text-white px-4">
         <motion.h1
-          className="text-4xl md:text-6xl font-extrabold mb-4"
+          className="text-4xl md:text-6xl font-extrabold mb-4 banner-text"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 1 }}
@@ -60,7 +60,7 @@ export default function HeroSection() {
         >
           <Link
             to="/vehicles"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition"
+            className="inline-block bg-rose-800 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-400 transition"
           >
             Browse Vehicles
           </Link>

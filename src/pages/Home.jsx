@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { FaMotorcycle, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 import HeroSection from "../components/HeroSection";
 
@@ -10,8 +9,8 @@ export default function Home() {
       <HeroSection />
 
       {/* How It Works Section */}
-      <section className="py-20 px-6 bg-white text-center">
-        <h2 className="text-3xl font-bold text-blue-600 mb-10">How It Works</h2>
+      <section className="py-20 px-6 text-center bg-gradient-to-br from-neutral-900 via-gray-800 to-neutral-900">
+        <h2 className="text-3xl font-bold text-rose-700 mb-10">How It Works</h2>
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {[
             {
@@ -32,7 +31,7 @@ export default function Home() {
           ].map((item, idx) => (
             <motion.div
               key={idx}
-              className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition"
+              className="bg-gray-50 p-6 rounded-xl shadow transition-transform duration-300 ease-in-out transform hover:scale-105"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: idx * 0.2 }}
@@ -47,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-blue-700 text-white py-16 text-center px-6">
+      <section className="bg-gradient-to-r from-rose-500 to-rose-700 text-white py-16 text-center px-6">
         <motion.h2
           className="text-3xl font-bold mb-4"
           initial={{ scale: 0.9, opacity: 0 }}
@@ -64,7 +63,7 @@ export default function Home() {
           href="https://wa.me/91XXXXXXXXXX" // Replace with actual number
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
+          className="inline-block bg-white text-rose-500 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
         >
           Chat on WhatsApp
         </a>
