@@ -7,12 +7,12 @@ const bikes = [
   {
     name: "Xpulse",
     price: 1049,
-    image: "/assets/2.jpeg",
+    image: "/assets/6.jpeg",
   },
   {
     name: "Thunderbird",
     price: 1199,
-    image: "/assets/3.jpeg",
+    image: "/assets/5.jpeg",
   },
   {
     name: "Classic 350",
@@ -22,12 +22,12 @@ const bikes = [
   {
     name: "Ntroq",
     price: 700,
-    image: "/assets/5.jpeg",
+    image: "/assets/3.jpeg",
   },
   {
     name: "Dio",
     price: 700,
-    image: "/assets/6.jpeg",
+    image: "/assets/2.jpeg",
   },
 ];
 
