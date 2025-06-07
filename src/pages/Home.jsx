@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-rose-500 to-rose-700 text-white py-16 text-center px-6">
+      <section className="bg-gradient-to-r from-rose-700 to-rose-900 text-white py-16 text-center px-6">
         <motion.h2
           className="text-3xl font-bold mb-4"
           initial={{ scale: 0.9, opacity: 0 }}
