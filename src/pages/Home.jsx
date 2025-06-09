@@ -60,7 +60,7 @@ export default function Home() {
           Contact us now and book your ride instantly on WhatsApp!
         </p>
         <a
-          href="https://wa.me/91XXXXXXXXXX" // Replace with actual number
+          href="https://wa.me/918486476902" // Replace with actual number
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-white text-rose-500 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"

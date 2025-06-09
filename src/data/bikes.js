@@ -20,7 +20,7 @@ const bikes = [
     image: "/assets/4.jpeg",
   },
   {
-    name: "Ntroq",
+    name: "Ntorq",
     price: 700,
     image: "/assets/3.jpeg",
   },
