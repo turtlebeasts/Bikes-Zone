@@ -17,6 +17,7 @@ export default function Vehicles() {
               src={bike.image}
               alt={bike.name}
               className="w-full h-48 object-cover rounded-lg mb-4"
+              loading="lazy"
             />
             <h2 className="text-xl font-semibold text-white">{bike.name}</h2>
             <p className="text-gray-400 mb-3">₹{bike.price} / day</p>
