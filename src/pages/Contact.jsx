@@ -2,12 +2,12 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-neutral-900 via-gray-800 to-neutral-900 text-white py-20 px-4 flex flex-col items-center">
+    <section className="min-h-screen bg-gradient-to-br from-neutral-900 via-gray-800 to-neutral-900 text-white py-28 px-4 flex flex-col items-center -mt-14">
       <h2 className="text-4xl font-bold mb-6 text-center">Get in Touch</h2>
 
       {/* WhatsApp Chat Button */}
       <a
-        href="https://wa.me/919876543210" // Replace with your WhatsApp number
+        href="https://wa.me/918486476902" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium text-lg transition duration-300 shadow-md mb-12"

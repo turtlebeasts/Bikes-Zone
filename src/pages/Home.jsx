@@ -31,7 +31,7 @@ export default function Home() {
           ].map((item, idx) => (
             <motion.div
               key={idx}
-              className="bg-gray-50 p-6 rounded-xl shadow transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="bg-gradient-to-br from-neutral-900 via-gray-800 to-neutral-900 text-white rounded-xl p-6 shadow-gray-900 shadow-lg transition-transform transform hover:scale-105 border-b-2 border-rose-700"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: idx * 0.2 }}
@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-rose-700 to-rose-900 text-white py-16 text-center px-6">
+      <section className="bg-gradient-to-r from-rose-700 to-rose-900 text-white py-16 text-center px-6 shadow-[inset_-10px_10px_40px_rgba(0,0,0,0.4),inset_10px_10px_20px_rgba(255,255,255,0.05)]">
         <motion.h2
           className="text-3xl font-bold mb-4"
           initial={{ scale: 0.9, opacity: 0 }}

@@ -60,7 +60,7 @@ export default function HeroSection() {
         >
           <Link
             to="/vehicles"
-            className="inline-block bg-rose-800 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-400 transition"
+            className="inline-block bg-rose-800 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-400 transition shadow-xl"
           >
             Browse Vehicles
           </Link>
