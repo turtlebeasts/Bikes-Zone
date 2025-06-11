@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { FaMotorcycle, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 import HeroSection from "../components/HeroSection";
+import FAQs from "../components/FAQs";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -68,6 +70,8 @@ export default function Home() {
           Chat on WhatsApp
         </a>
       </section>
+      <FAQs />
+      <WhyChooseUs />
     </div>
   );
 }

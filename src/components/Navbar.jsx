@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import image from "./logo.png";
+import logo from "./bz.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +18,17 @@ export default function Navbar() {
   return (
     <nav className="bg-black/60 backdrop-blur-md shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold text-white logo-text">
-          Bikes Zone
+        <Link
+          to="/"
+          className="hidden md:block text-2xl font-bold text-white logo-text"
+        >
+          <img src={image} width={"20%"} />
+        </Link>
+        <Link
+          to="/"
+          className="block md:hidden text-2xl font-bold text-white logo-text"
+        >
+          <img src={logo} width={"13%"} />
         </Link>
 
         {/* Desktop Menu */}
